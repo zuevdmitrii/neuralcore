@@ -215,7 +215,6 @@ const NetworkInst = new Network();
 NetworkInst.addLayer(3);
 NetworkInst.addLayer(4);
 NetworkInst.addLayer(4);
-NetworkInst.addLayer(4);
 
 const trainData = [
  [0, 0, 0],
@@ -229,7 +228,7 @@ const trainData = [
 ];
 
 const answer = [
- [0, 0, 0, 0],
+ [1, 0, 0, 0],
  [0, 1, 0, 0],
  [0, 1, 0, 0],
  [0, 0, 1, 0],
