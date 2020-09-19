@@ -1,0 +1,12 @@
+{
+  "name": "sitebuilder-scout",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3"
+  }
+}
