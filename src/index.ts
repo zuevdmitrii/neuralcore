@@ -98,7 +98,7 @@ class Network implements INetwork {
   public layers: ILayer[] = [];
   public weights = new Graph();
   public Speed: number = 0.7;
-  public Alpha: number = 0.3;
+  public Alpha: number = 0.01;
   public ErrorRate: number = 0.01
 
   public addLayer = (countOfNeurons: number) => {
@@ -240,9 +240,12 @@ const answer = [
 ];
 
 const epohe = () => {
+  let Err = 0
   trainData.forEach((data, index) => {
     NetworkInst.train(data, answer[index]);
+    Err += NetworkInst.Error
   })
+  console.log(Err / trainData.length)
 }
 
 const calc = () => {
